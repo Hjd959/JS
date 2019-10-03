@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <button type="button" id="but">Click Me</button>
+
+    <br>
+
+
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+
+    <br>
+
+    <button type="button" id="butFunction">Click Me With Function</button>
+
+</body>
+
+<script>
+    var x = 25;
+    var y = 15;
+    var z = x + y;
+
+
+
+
+    var p1 = document.querySelector('#a');
+    var p2 = document.querySelector('#b');
+    var p3 = document.querySelector('#c');
+    var butoon = document.querySelector('#but');
+
+
+    var p4 = document.querySelector('#d');
+    var p5 = document.querySelector('#e');
+    var p6 = document.querySelector('#f');
+    var butoonfunction = document.querySelector('#butFunction');
+
+
+    butoon.addEventListener("click", () => p1.innerHTML = "القيمة الاولى" + " " + x);
+
+    butoon.addEventListener("click", () => p2.innerHTML = "القيمة الثانية" + "" + y);
+    butoon.addEventListener("click", () => p3.innerHTML = "مجموع القيم" + "" + z);
+
+
+
+    butoonfunction.addEventListener("click", () => {
+        p4.innerHTML = "القيمة الاولى" + " " + x;
+        p5.innerHTML = "القيمة الثانية" + " " + y;
+        p6.innerHTML = "القيمة الثالثه" + " " + z;
+
+    })
+</script>
+
+</html>

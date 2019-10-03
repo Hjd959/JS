@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button type="button" onclick="window.alert(10 + 6)">Click me to see an alert</button>
+
+    <p id="demoFunction"></p>
+    <br>
+    <p id="demoFunction2"></p>
+    <br>
+    <button id="but" type="button">sum</button>
+    <br>
+    <button id="but2" type="button">sum2</button>
+
+
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+
+        function myFunction2() {
+            alert("Hello World!");
+        }
+
+
+
+        var bouttt = document.getElementById("but");
+        var bouttt2 = document.getElementById("but2");
+        var para = document.getElementById("demoFunction");
+        var para2 = document.getElementById("demoFunction2");
+
+
+
+        bouttt.addEventListener("click", () => para.innerHTML = myFunction(50, 5));
+        bouttt2.addEventListener("click", () => para2.innerHTML = myFunction(5, 5));
+    </script>
+
+</body>
+
+</html>

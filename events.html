@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button id="button-test" type="button">Click me!</button>
+
+    <!-- Empty paragraph with an ID "example-1" -->
+    <p id="example-1"></p>
+
+
+    <button id="button-test-2" type="button">Click me!</button>
+    <!-- Empty paragraph with an ID "example-2" -->
+    <p id="example-2"></p>
+
+
+    <!-- creat a button that will alert "heloo " when someone click it  -->
+    <button id="button-test-3" type="button">Click me!</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // That instruction says "If you click button with ID 'button-test' run myFunction"
+        document.getElementById("button-test").onclick = function () {
+            myFunction()
+        };
+
+        // That instruction says "Put this text into a paragraph with an ID "example-1"
+        function myFunction() {
+            document.getElementById("example-1").innerHTML = "WOW, YOU CLICKED ME!";
+        }
+
+
+        // That instructions says "If you click button with ID 'button-test' put a current date in the paragraph with an ID "example-2"
+        document.getElementById("button-test-2").onclick = function () {
+            document.getElementById("example-2").innerHTML = Date();
+        };
+
+        document.getElementById("button-test-3").onclick = function () {
+            alert("heloo");
+        };
+    </script>
+</body>
+
+</html>

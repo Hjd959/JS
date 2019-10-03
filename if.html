@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <!-- Example One -->
+    <p>Welcom to if Statament Example One</p>
+    <p id="if-statament1"></p>
+    <button id="but-1" type="button" onclick="myFunction()">show if</button>
+
+
+    <!-- Example Two -->
+    <p>Welcom to if Statament Example Two</p>
+    <p id="if-statament2"></p>
+    <button id="but-2" type="button" onclick="func2()">show if</button>
+
+
+
+    <!-- Example Three -->
+    <p>Welcom to if Statament Example Three</p>
+    <p id="if-statament3"></p>
+    <button id="but-3" type="button" onclick="dgOfStudent()">show if</button>
+
+    <script>
+        // Answer Example One
+        function myFunction() {
+            var hour = new Date().getHours();
+            var greeting;
+            if (hour < 18) {
+                greeting = "Good day";
+            } else {
+                greeting = "Good evening";
+            }
+            document.querySelector("#if-statament1").innerHTML = greeting;
+        }
+
+
+        // Answer Example Two 
+
+        function func2() {
+
+            var day = {
+                b: true,
+                lunch: true,
+                dinner: true
+            }
+            if (day.b == true) {
+                alert("Good Morning");
+                console.log("Good Morning");
+            }
+            if (day.lunch == true) {
+                alert("Good Afternoon");
+                console.log("Good Afternoon");
+            }
+            if (day.dinner == true) {
+                alert("Good night ");
+            } else {
+                alert("you slp")
+            }
+        }
+
+        // Answer Three
+
+        function dgOfStudent() {
+            var student = {
+                s1: 94,
+                s2: 94,
+                s3: 50,
+                s4: 60,
+                s5: 70
+            }
+
+            if (student.s1 >= 60) {
+                alert("s1 you pass")
+            } else if (student.s1 < 60) {
+                alert("s1 you get F")
+            }
+            if (student.s2 >= 60) {
+                alert("s2 you pass")
+            } else if (student.s2 < 60) {
+                alert("s2 you get F")
+            }
+            if (student.s3 >= 60) {
+                alert("s3 you pass")
+            } else if (student.s3 < 60) {
+                alert("s3 you get F")
+            }
+            if (student.s4 >= 60) {
+                alert("s4 you pass")
+            } else if (student.s4 < 60) {
+                alert("s4 you get F")
+            }
+            if (student.s5 >= 60) {
+                alert("s5 you pass")
+            } else if (student.s5 < 60) {
+                alert("s6 you get F")
+            }
+
+        }
+    </script>
+</body>
+
+</html>

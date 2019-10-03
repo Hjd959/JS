@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <!-- Example One -->
+    <p>Result 1</p>
+    <p id="result1"></p>
+    <button id="but-1" type="button" onclick="forTest()">Try</button>
+
+
+    <!-- Example Two -->
+    <p>Result 2</p>
+    <p id="result2"></p>
+    <button id="but-2" type="button" onclick="forTest2()">Try</button>
+
+
+    <!-- Example Three -->
+    <p>Result 3</p>
+    <p id="result3"></p>
+    <button id="but-3" type="button" onclick="countSheep(7)">Try</button>
+
+
+
+
+
+
+    <script>
+        // Solution Example One
+        function forTest() {
+            var str = "";
+            for (var i = 0; i <= 9; i++) {
+                str = str + i;
+            }
+            document.querySelector("#result1").innerHTML = str;
+        }
+
+
+        // Solution Example Two
+
+        function forTest2() {
+            var str2 = ""
+            for (let i = 1;; i++) {
+                if (i > 3) break;
+                str2 = (str2 + i + " sheep... ");
+            }
+            document.querySelector("#result2").innerHTML = str2;
+        }
+
+
+        function countSheep(n) {
+            var num = ""
+            for (let i = 1; i <= n; i++) {
+
+                num = (num + i + " sheep... ");
+            }
+            document.querySelector("#result3").innerHTML = num;
+        }
+
+
+        // var countSheep = function (num) {
+
+        //     for (let i = 1;; i++) {
+        //         if (i > 3) break;
+        //         num = (num + i + " sheep... ");
+        //     }
+        //     document.querySelector("#result3").innerHTML = countSheep;
+        // }
+    </script>
+
+
+</body>
+
+</html>
+
+<!-- "1 sheep...2 sheep...3 sheep..." -->

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <!-- Example One -->
+    <p>While Loop</p>
+    <p id="whil"></p>
+    <button id="but-1" type="button" onclick="whilLop()">try</button>
+
+
+
+    <!-- Example Two -->
+    <p>While Loop2</p>
+    <p id="whil2"></p>
+    <button id="but-2" type="button" onclick="whilLop2()">try</button>
+
+
+
+    <script>
+        // Answer Example One
+        function whilLop() {
+            var i = 0;
+            while (i < 11) {
+                i++;
+            }
+            document.querySelector("#whil").innerHTML = i;
+        }
+
+        // Answer Example Two
+        function whilLop2() {
+            var i = 0;
+            for (i = 0; i < 10; i++) {
+                if (i === 3) {
+                    continue;
+                }
+                whil2 += "The number is " + i + "<br>";
+            }
+            document.querySelector("#whil2").innerHTML = i;
+        }
+    </script>
+</body>
+
+</html>

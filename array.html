@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head></head>
+
+<body>
+    <!-- Example One -->
+    <!-- Show Element -->
+    <p id="array-1"></p>
+    <button id="but1" type="button">Show Array</button>
+
+
+    <!-- Example Two -->
+    <!-- Change Element -->
+
+    <p>"Saab", "Volvo", "BMW"</p>
+    <p id="array-2"></p>
+    <button id="but2" type="button">Change Array Element</button>
+
+    <!-- Example Three -->
+    <!-- Lenght Of Array -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-3"></p>
+    <button id="but3" type="button">Lenght Of Array</button>
+
+
+    <!-- Example Fore -->
+    <!-- Lenght Of Array in Alert -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <button id="but4" type="button">Lenght Of Array in Alert</button>
+
+
+    <script>
+        // Answer One 
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("but1").onclick = function () {
+            document.getElementById("array-1").innerHTML = cars[0];
+        }
+
+
+        // Answer Two
+        var cars = ["Saab", "Volvo", "BMW"];
+        cars[0] = "opp"
+        document.getElementById("but2").onclick = function () {
+            document.getElementById("array-2").innerHTML = cars;
+        }
+
+
+        // Answer Three 
+
+        var fv = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but3").onclick = function () {
+            document.getElementById("array-3").innerHTML = fv.length;
+
+        }
+
+
+        // Answer Fore
+
+        var fv = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but4").onclick = function () {
+            alert(fv.length);
+
+        }
+    </script>
+</body>
+
+</html>

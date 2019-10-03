@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style></style>
+</head>
+
+<body>
+
+    <!-- to show strong -->
+    <strong id="OutType"></strong>
+    <strong id="OutModel"></strong>
+    <strong id="OutColor"></strong>
+    <strong id="OutName"></strong>
+
+    <br>
+    <!-- to show action  -->
+    <button id="type" type="button">TYPE</button>
+    <button id="model" type="button">MODEL</button>
+    <button id="color" type="button">COLOR</button>
+    <button id="name" type="button">NAME</button>
+
+
+    <!-- Alert View -->
+    <button id="name" type="button"
+        onclick="window.alert((car.type) + ' ' + (car.model) +' '+ (car.color) +' '+ (car.name))">Alert</button>
+
+
+
+
+    <script>
+        var car = {
+            type: "Fiat",
+            model: "500",
+            color: "white",
+            name: "bmw"
+        };
+
+        // for Output strong
+        let sType = document.querySelector("#OutType")
+        let sModel = document.querySelector("#OutModel")
+        let sColor = document.querySelector("#OutColor")
+        let sName = document.querySelector("#OutName")
+
+        // for Output button
+        let bType = document.querySelector("#type")
+        let bModel = document.querySelector("#model")
+        let bColor = document.querySelector("#color")
+        let bName = document.querySelector("#name")
+
+        // for Action 
+        bType.addEventListener("click", () => sType.innerHTML = car.type);
+        bModel.addEventListener("click", () => sModel.innerHTML = car.model);
+        bColor.addEventListener("click", () => sColor.innerHTML = car.color);
+        bName.addEventListener("click", () => sName.innerHTML = car.name);
+    </script>
+</body>
+
+</html>

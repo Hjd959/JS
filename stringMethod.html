@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- Example One -->
+    <!-- LENGHT -->
+    <p>show the text of lenght</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p id="textOfLenght"></p>
+    <button id="bLenght">show the length</button>
+
+
+    <!-- Example Two -->
+    <!-- SLICE METHOD -->
+    <p>Apple, Banana, Kiwi</p>
+    <p id="sliceMethod"></p>
+    <button id="slice">Show slice</button>
+
+
+
+    <!-- Example Three -->
+    <!-- SUBSTR METHOD -->
+    <p>Apple, Banana, Kiwi</p>
+    <p id="SubstrMethod"></p>
+    <button id="substr">Show substr</button>
+
+    <br>
+    <br>
+    <!-- Example Fore -->
+    <!-- REPLACE METHOD -->
+    <button id="buttonOfReplace">Try it</button>
+    <p id="replaceM">Please visit Microsoft!</p>
+
+    <br>
+    <br>
+    <!-- Example Five -->
+    <!-- toUpperCase METHOD -->
+    <button id="buttonFive">Try it</button>
+    <p id="toUpperCase">Hello World</p>
+
+
+    <br>
+    <br>
+    <!-- Example Six -->
+    <!-- toLowerCase METHOD -->
+    <button id="buttonSix">Try it</button>
+    <p id="toLowerCase">Hello World</p>
+
+
+    <br>
+    <br>
+    <!-- Example Seven -->
+    <!-- concat METHOD -->
+    <button id="buttonSeven">Try it</button>
+    <p id="concat"> World</p>
+
+
+
+
+
+
+    <script>
+        // Answer Example One
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("bLenght").onclick = function () {
+            document.getElementById("textOfLenght").innerHTML = txt.length;
+        }
+
+        // Answer Example Two 
+
+        var str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+        document.getElementById("slice").onclick = function () {
+            document.getElementById("sliceMethod").innerHTML = res;
+
+        }
+
+        // Answer Example Three 
+        var str = "Apple, Banana, Kiwi";
+        var res = str.substr(2);
+        document.getElementById("substr").onclick = function () {
+            document.getElementById("SubstrMethod").innerHTML = res;
+
+        }
+
+
+        // Answer Example Fore 
+        var str = document.getElementById("replaceM").innerHTML;
+        var txt2 = str.replace("visit", "MDBootstrap");
+
+        document.getElementById("buttonOfReplace").onclick = function () {
+            document.getElementById("replaceM").innerHTML = txt2;
+        };
+
+
+        // Answer Example Five 
+        var strUp = document.getElementById("toUpperCase").innerHTML;
+
+        document.getElementById("buttonFive").onclick = function () {
+            document.getElementById("toUpperCase").innerHTML = strUp.toUpperCase();
+        };
+
+
+        // Answer Example Six 
+        var strUp = document.getElementById("toLowerCase").innerHTML;
+
+        document.getElementById("buttonSix").onclick = function () {
+            document.getElementById("toLowerCase").innerHTML = strUp.toLowerCase();
+        };
+
+
+
+        // Answer Example Seven 
+
+        var text1 = "Hello";
+        var text2 = "World!";
+        var text3 = text1.concat(" ", text2);
+
+        document.getElementById("buttonSeven").onclick = function () {
+            document.getElementById("concat").innerHTML = text3;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // some method 
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var sln = txt.length; // Result 26
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate"); // Result 7
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate"); // Result 21
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("John"); // Result -1
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("locate",
+            15); // Result 21, because it will skip the first "locate" string to start searching from the position 15
+
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.search("locate"); // Result 7
+    </script>
+
+</body>
+
+</html>

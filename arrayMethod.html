@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <!-- Example One -->
+    <!-- POP METHOD -->
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-1"></p>
+    <button id="but-1" type="button">Show POP Array</button>
+
+    <p id="array-@1"></p>
+    <button id="but-@1" type="button">Show Array</button>
+
+
+    <!-- Example Two -->
+    <!--  PUCH METHOD-->
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-2"></p>
+    <button id="but-2" type="button">Show PUCH Array</button>
+
+    <p id="array-@2"></p>
+    <button id="but-@2" type="button">Show Array</button>
+
+    <!-- Example Three -->
+    <!-- SHIFT METHOD -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-3"></p>
+    <button id="but-3" type="button">Show SHIFT Array</button>
+
+    <p id="array-@3"></p>
+    <button id="but-@3" type="button">Show Array</button>
+
+
+    <!-- Example Fore -->
+    <!-- UNSHIFT METHOD -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-4"></p>
+    <button id="but-4" type="button">Show UNSHIFT Array</button>
+
+    <p id="array-@4"></p>
+    <button id="but-@4" type="button">Show Array</button>
+
+
+
+    <!-- Example Five -->
+    <!-- LENGHT METHOD -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-5"></p>
+    <button id="but-5" type="button">Show LENGHT Array</button>
+
+    <p id="array-@5"></p>
+    <button id="but-@5" type="button">Show Array</button>
+
+
+    <!-- Example Six -->
+    <!-- splice METHOD -->
+    <!-- Using splice() to Remove Elements -->
+
+    <p>["Banana", "Orange", "Apple", "Mango"]</p>
+    <p id="array-6"></p>
+    <button id="but-6" type="button">Show splice() Array</button>
+
+    <p id="array-@6"></p>
+    <button id="but-@6" type="button">Show Array</button>
+
+
+
+    <script>
+        // Answer Example One 
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("but-1").onclick = function () {
+            document.getElementById("array-1").innerHTML = fruits.pop();
+        }
+        document.getElementById("but-@1").onclick = function () {
+            document.getElementById("array-@1").innerHTML = fruits;
+
+        }
+
+        // Answer Example Two 
+        var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but-2").onclick = function () {
+            document.getElementById("array-2").innerHTML = fruits2.push("Kiwi");
+        }
+        document.getElementById("but-@2").onclick = function () {
+
+            document.getElementById("array-@2").innerHTML = fruits2;
+        }
+
+        // Answer Example Three 
+        var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but-3").onclick = function () {
+            document.getElementById("array-3").innerHTML = fruits3.shift();
+        }
+        document.getElementById("but-@3").onclick = function () {
+            document.getElementById("array-@3").innerHTML = fruits3;
+        }
+
+
+        // Answer Example Fore
+        var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but-4").onclick = function () {
+            document.getElementById("array-4").innerHTML = fruits4.unshift("Lemon");
+        }
+        document.getElementById("but-@4").onclick = function () {
+            document.getElementById("array-@4").innerHTML = fruits4;
+        }
+
+
+        // Answer Example Five
+        var fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but-5").onclick = function () {
+            // هذي مشكلتها تحجز مكان كبير في الذاكره
+            document.getElementById("array-5").innerHTML = fruits5[fruits5.length] = "Kiwi";
+        }
+        document.getElementById("but-@5").onclick = function () {
+            document.getElementById("array-@5").innerHTML = fruits5;
+        }
+
+
+        // Answer Example Six
+        var fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("but-6").onclick = function () {
+            // هذي مشكلتها تحجز مكان كبير في الذاكره
+            document.getElementById("array-6").innerHTML = fruits.splice(0, 1);
+        }
+        document.getElementById("but-@6").onclick = function () {
+            document.getElementById("array-@6").innerHTML = fruits6;
+        }
+    </script>
+</body>
+
+</html>

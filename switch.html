@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <!-- Example One -->
+    <p id="resultValue1"></p>
+    <input type="text" id="addValue1">
+    <button type="button" id="but1" onclick="setDay()">Puch</button>
+
+
+
+
+
+
+
+    <script>
+        function setDay() {
+            var input = document.getElementById('addValue1');
+            var dayNum = +input.value;
+
+            switch (dayNum) {
+                case 0:
+
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+
+                default:
+                    day = "no value";
+
+
+
+            }
+            document.getElementById('resultValue1').innerHTML = day;
+        }
+    </script>
+</body>
+
+</html>
